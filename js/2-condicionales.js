@@ -10,6 +10,8 @@
 
 // tengo que pedirle la edad al usuario
 // puede votar a partir de los 16 años
+// 16 y 17 es opcional votar, 71 en adelante es opcional
+// 18 a 70 es obligatorio
 
 // parseInt('40');
 // parseFloat('50.5');
@@ -18,8 +20,8 @@ let edad = parseInt(prompt('Ingrese su edad'));
 console.log(typeof(edad));
 console.log(edad);
 
-if(edad >= 16){
-    document.write('Usted debe votar');
+if(edad >= 16 &&  edad < 18 || edad >=71){
+    document.write('Es optativo votar');
 }else{
     document.write('No puede votar');
 }
