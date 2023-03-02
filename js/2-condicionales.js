@@ -20,12 +20,17 @@ let edad = parseInt(prompt("Ingrese su edad"));
 console.log(typeof edad);
 console.log(edad);
 
-if ((edad >= 16 && edad < 18) || edad >= 71) {
-  document.write("Es optativo votar");
-} else {
-  if (edad >= 18 && edad < 71) {
+// isNaN(edad) devuelve true o false
+
+if (edad > 0 && edad <= 130) {
+
+  if ((edad >= 16 && edad < 18) || edad >= 71) {
+    document.write("Es optativo votar");
+  } else if (edad >= 18 && edad < 71) {
     document.write("Es obligatorio votar");
   } else {
     document.write("No puede votar");
   }
+} else {
+  document.write("Ingreso un valor invalido");
 }
