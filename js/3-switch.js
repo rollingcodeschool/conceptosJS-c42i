@@ -19,9 +19,15 @@ switch(opcion){
 
 // solicitar al usuario que seleccione un dia de la semana, le vamos a sugerir un menú para cada dia: plato principal, bebida, postre.
 
-const dia = prompt('Seleccione un dia: 1-Lunes, 2-Miercoles, 3-viernes');
+let dia = prompt('Seleccione un dia: 1-Lunes, 2-Miercoles, 3-viernes');
+console.log(dia)
+console.log(dia.toLowerCase());
+console.log(dia.toUpperCase());
+//modificar el contenido de dia a minusculas
+dia = dia.toLowerCase();
 
 switch(dia){
+    case 'lunes':
     case '1':
         document.write(`<h2>Menú del Lunes</h2>
         <ul>
