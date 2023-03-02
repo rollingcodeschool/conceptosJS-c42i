@@ -17,3 +17,35 @@ switch(opcion){
 }
 */
 
+// solicitar al usuario que seleccione un dia de la semana, le vamos a sugerir un menú para cada dia: plato principal, bebida, postre.
+
+const dia = prompt('Seleccione un dia: 1-Lunes, 2-Miercoles, 3-viernes');
+
+switch(dia){
+    case '1':
+        document.write(`<h2>Menú del Lunes</h2>
+        <ul>
+            <li>Plato principal: Milanesa con pure</li>
+            <li>Bebida: Coca-cola</li>
+            <li>Postre: Flan con dulce de leche</li>
+        </ul>`);
+        break;
+    case '2':
+        document.write(`<h2>Menú del Miercoles</h2>
+        <ul>
+            <li>Plato principal: Hamburguesa con papas</li>
+            <li>Bebida: Sprite</li>
+            <li>Postre: Helado</li>
+        </ul>`);
+        break;
+    case '3':
+        document.write(`<h2>Menú del Viernes</h2>
+        <ul>
+            <li>Plato principal: Pizza</li>
+            <li>Bebida: Cerveza</li>
+            <li>Postre: Panqueques con helado</li>
+        </ul>`);
+        break;
+    default:
+        document.write('Ingreso una opción invalida');
+}
