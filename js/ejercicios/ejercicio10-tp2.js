@@ -6,12 +6,13 @@ const columnas = prompt('Ingrese el numero de columnas');
 console.log(filas)
 
 document.write('<table><tbody>')
-
+//dibuja las filas
 for(let indiceFilas=0; indiceFilas < filas; indiceFilas++){
-    document.write(`
-    <tr>
-      <td>1</td>
-    </tr>
-  `)
+   document.write('<tr>')
+        //dibujar las celdas
+        for( let indiceColumnas=0;  indiceColumnas <columnas; indiceColumnas++){
+            document.write(`<td>AAAAAA</td>`)
+        }
+   document.write('</tr>')
 }
 document.write('</tbody></table>')
