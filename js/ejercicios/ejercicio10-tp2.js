@@ -3,6 +3,8 @@
 const filas = prompt('Ingrese el numero de filas');
 const columnas = prompt('Ingrese el numero de columnas');
 
+let totalCeldas = filas * columnas; 
+
 console.log(filas)
 
 document.write('<table><tbody>')
@@ -11,7 +13,8 @@ for(let indiceFilas=0; indiceFilas < filas; indiceFilas++){
    document.write('<tr>')
         //dibujar las celdas
         for( let indiceColumnas=0;  indiceColumnas <columnas; indiceColumnas++){
-            document.write(`<td>AAAAAA</td>`)
+            document.write(`<td>${totalCeldas}</td>`);
+            totalCeldas--;
         }
    document.write('</tr>')
 }
