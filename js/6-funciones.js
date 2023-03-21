@@ -16,10 +16,11 @@ function saludoPersonaje(nombre, apellido, alias){
 //     return nuevoNombre;
 // }
 //funciones expresivas o anonimas
-const nombreCompleto = function (nombre, apellido){
-    return nombre+', '+apellido;
-}
+// const nombreCompleto = function (nombre, apellido){
+//     return nombre+', '+apellido;
+// }
 
+const nombreCompleto = (nombre, apellido) => nombre+', '+apellido;
 
 // llamar o invocar a la funcion
 
@@ -32,7 +33,6 @@ let apellido = 'Kent';
 let heroe = 'Superman';
 
 saludoPersonaje('Peter', 'Parker', 'Spiderman');
-
 saludoPersonaje(nombre,apellido, heroe);
 
 nombre = 'Tony'
