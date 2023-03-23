@@ -27,7 +27,7 @@ let productos = [
     // }
     // arreglo.forEach((producto) => { document.write(`<li>${producto} </li>`); })
     //map
-        arreglo.map(producto => document.write(`<li>${producto} </li>`) )    
+      arreglo.map(producto => document.write(`<li>${producto} </li>`) )    
     // forEach, for in, for of
     document.write("</ul>");
   };
@@ -35,6 +35,15 @@ let productos = [
   mostrarProductos('Lista de productos', productos);
 
   //filtrar los protectores solares
+ let listaProtectoresSolares = productos.filter(producto => producto.includes('Protector'))
+ console.log(listaProtectoresSolares)
 
+ mostrarProductos('Protectores solares', listaProtectoresSolares);
+  
+ //buscar un serum find
+ let serum = productos.find(producto => producto.includes('Sérum'));
+ let otroProducto = productos.find(producto => producto.includes('shampoo') === true );
 
-  //buscar un serum
+ document.write(`<p>Producto buscado: ${serum}</p>`)
+ document.write(`<p>Producto buscado: ${ otroProducto === undefined ? 'no encontramos el producto solicitado' : otroProducto }</p>`)
+
