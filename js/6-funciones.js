@@ -6,7 +6,7 @@ function saludar(){
     document.write('Hola mundo<br>');
 }
 
-function saludoPersonaje(nombre, apellido, alias){
+function saludoPersonaje(nombre , apellido, alias){
     // let otroNombre = nombreCompleto(nombre, apellido);
     document.write(`<p>Hola mi nombre es ${nombreCompleto(nombre, apellido)} me conocen como ${alias}</p>`)
 }
